@@ -1,0 +1,18 @@
+.form-control {
+  box-shadow: inset 2px 4px 4px rgb(41 112 225 / 16%);
+}
+
+.form-block {
+    position: relative;
+}
+
+.register_user_error {
+    position: absolute;
+    font-size: 12px;
+    bottom: -24px;
+    right: 0;
+    color: red;
+    &-b {
+        border: 1px solid red !important;
+    }
+}

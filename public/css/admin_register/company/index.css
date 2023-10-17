@@ -1,0 +1,104 @@
+.form-control {
+  box-shadow: inset 2px 4px 4px rgba(41, 112, 225, 0.16);
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.form-number {
+  padding-left: 40px !important;
+  position: relative;
+}
+
+.input-number {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  font-size: 13px;
+  border-right: 1px solid #e1ebfb;
+  padding-right: 4px;
+  color: #757575;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link-acht-blue {
+  color: #0058EF;
+  transition: 0.3s ease all;
+  border-bottom: 2px solid white;
+}
+.link-acht-blue:hover {
+  color: #0544aa;
+  border-bottom: 2px solid #0544aa;
+}
+
+button {
+  border: 0px solid transparent;
+  background: transparent;
+}
+
+.form-block {
+  position: relative;
+}
+
+.register_user_error {
+  position: absolute;
+  font-size: 12px;
+  bottom: -24px;
+  right: 0;
+  color: red;
+}
+.register_user_error-b {
+  border: 1px solid red !important;
+}
+
+#register_company .register {
+  display: grid;
+  grid-template-columns: 600px auto;
+  width: 100%;
+  height: 100vh;
+}
+#register_company .register-left {
+  background: #3B6BBF;
+  position: relative;
+}
+#register_company .register-left img {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+#register_company .register-right {
+  order: -1;
+  padding: 95px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#register_company .register-right-content {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#register_company .register-right-title .top h1 {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+#register_company .register-right-title .bottom {
+  font-size: 17px;
+  display: flex;
+  gap: 5px;
+}
+#register_company .register-right-title .bottom p {
+  padding: 0;
+  margin: 0;
+}

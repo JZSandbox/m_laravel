@@ -1,0 +1,13 @@
+.link {
+  text-decoration: none;
+}
+
+.link-acht-blue {
+  color: $link-color;
+  transition: 0.3s ease all;
+  border-bottom: 2px solid white;
+  &:hover{
+    color: $link-color-hover;
+    border-bottom: 2px solid $link-color-hover;
+  }
+}

@@ -1,0 +1,4 @@
+AuthUserFile "/usr/www/users/fryder/mareike_laravel/bootstrap/.htpasswd"
+AuthName "Realm"
+AuthType Basic
+require valid-user

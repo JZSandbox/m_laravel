@@ -1,0 +1,75 @@
+.acht-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    .active {
+        background-color: $dark-blue !important;
+        color: white
+    }
+    .link {
+       text-decoration: none;
+       color: $dark-blue;
+       span {
+           color: white;
+           margin-left: 5px;
+       }
+    }
+    .prev-before {
+        span {
+            margin-left: 5px;
+        }
+    }
+    .page-next {
+        span {
+            margin-right: 4px;
+        }
+    }
+    .page {
+        box-shadow: 0 3px 6px rgba(0,0,0,.16);
+        border-radius: 100%;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        span {
+            color: white;
+        }
+    }
+    .disabeld{
+        width: 24px;
+        height: 24px;
+        background-color: $light-blue;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       span {
+        font-size: 15px;
+        color: white;
+       }
+    }
+    .acht-pagination-prev {
+        width: 24px;
+        height: 24px;
+        background-color: $light-blue;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .acht-pagination-next {
+        width: 24px;
+        height: 24px;
+        background-color: $light-blue;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .material-icons {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,17 @@
+.grid-template-two {
+    display: grid;
+    grid-template-columns: 47.5% 5% 47.5%;
+}
+.form-block {
+    .phone_number_input {
+        padding-left: 49px;
+    }
+   .span_number {
+    position: absolute;
+    bottom: 7px;
+    left: 9px;
+    color: $dark-blue;
+    border-right: 1px solid $dark-blue;
+    padding-right: 5px;
+   }
+}

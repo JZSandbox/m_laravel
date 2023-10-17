@@ -1,0 +1,53 @@
+@import "../colors/colorpalette";
+@import "custom/custombootstrap";
+@import "custom/customlinks";
+#register_company {
+  .register {
+    display: grid;
+    grid-template-columns: 600px auto;
+    width: 100%;
+    height: 100vh;
+
+    &-left{
+      background: $light-blue;
+      position: relative;
+      img {
+        position: absolute;
+        right: 0;
+        top: 20px;
+      }
+    }
+    &-right {
+      order: -1;
+      padding: 95px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &-content {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      &-title {
+        .top {
+          h1 {
+            font-size: 30px;
+            padding: 0;
+            margin: 0;
+          }
+        }
+        .bottom {
+          font-size: 17px;
+          display: flex;
+          gap: 5px;
+          p {
+            padding: 0;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,56 @@
+.cstm_btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 5px 23px;
+    display: inline-block;
+    position: relative;
+    &:hover {
+        color: #000;
+    }
+    &::before {
+        right: 0;
+        top: 0;
+    }
+    &::after {
+        left: 0;
+        bottom: 0;
+    }
+    &::before, &::after {
+        content:"";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        transition: all 0.2s linear;
+        background: rgb(0, 0, 0);
+    }
+    span {
+        display: block;
+        &::after {
+            left: 0;
+            top: 0;
+        }
+        &::before {
+            right: 0;
+            bottom: 0;
+        }
+        &::after, &::before {
+            content:"";
+            width:2px;
+            height: 0px;
+            position: absolute;
+            transition: all 0.2s linear;
+            background: rgb(0, 0, 0);
+        }
+    }
+    &:hover::before, &:hover::after {
+        width: 100%;
+    }
+    &:hover span::before, span::after {
+        height: 100%;
+    }
+}
+
+.btn_transparent {
+    background: #0404041f;
+}

@@ -1,0 +1,63 @@
+.navbar-light {
+  .navbar-brand {
+    &:hover,
+    &:focus {
+
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      position: relative;
+      &:hover a::before, &:hover a::after {
+        height: 100%;
+      }
+      &::before, &::after {
+        content:"";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        transition: all 0.2s linear;
+        background: #fff;
+      }
+      &:hover::before, &:hover::after {
+        width: 100%;
+      }
+      a{
+        display: block;
+        &::after, &::before {
+          content:"";
+          width:2px;
+          height:0;
+          position: absolute;
+          transition: all 0.2s linear;
+          background: #fff;
+        }
+        &::after {
+          right: 0;
+          bottom: 0;
+        }
+        &::before {
+          left: 0;
+          bottom: 0;
+        }
+      }
+    }
+    .nav-link {
+      color: white;
+      font-size: 14px;
+      text-transform: uppercase;
+      &:hover,
+      &:focus {
+
+      }
+
+      &.disabled {
+      }
+    }
+
+    .show > .nav-link,
+    .nav-link.active {
+    }
+  }
+}

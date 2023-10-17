@@ -1,0 +1,74 @@
+.notification-area {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.notification {
+    background: white;
+    animation: fadeBigInDown 1000ms both;
+    position: relative;
+    min-width: 242px;
+    border-radius: 10px;
+    padding: 13px 11px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 2px 14px rgb(0 0 0 / 16%);
+    &::before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 0 0 12px 19px;
+        height: 11%;
+        background: black;
+    }
+    span {
+        color: black;
+    }
+    .noti-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .noti-right {
+        margin-right: 25px;
+        &-top {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        &-bottom {
+            font-size: 13px;
+            margin-top: -2px;
+            color: #000;
+        }
+    }
+}
+
+.noti-error {
+    &::before {
+        background: red;
+    }
+    span {
+        color: red;
+    }
+}
+
+.noti-success {
+    &::before{
+        background: #68a208;
+    }
+    span {
+        color: #68a208;
+    }
+}
+
+.noti-update {
+    &::before {
+        background: #0a53be;
+    }
+    span {
+       color: #0a53be;
+    }
+}
